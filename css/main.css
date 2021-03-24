@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@300;400&display=swap');
+
+body, html{
+    margin: 0;
+    padding: 0;  
+}
+
+a{
+    text-decoration: none;
+}
+
+.totalContainer{
+    position: relative;
+    display: flex;
+    background-color: #5A697B;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+.menuContainer{
+    width: 65px;
+    height: 100vh;
+    left: 0%;
+    background: #2B2B48;
+    font-family: 'Sora', sans-serif;
+    color: #FFFFFF;
+    transition-duration: .5s;
+    z-index: 3;
+    
+}
+
+.menuHeader{
+    text-align: center;
+    height: 256px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.uabjoLogo{
+    width: 70%;
+    margin-top: 20px;
+    max-width: 100px;
+}
+
+.nameContainer{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.tituloUno{
+    font-family: Sora;
+    font-style: normal;
+    font-weight: 400;
+    font-weight: 1;
+    font-size: .1px;
+    line-height: 20px;
+    color: #FFFFFF;
+    transition: .5s;
+    opacity: 0;
+}
+
+.tituloDos{
+    font-family: Sora;
+    font-style: normal;
+    font-weight: 300;
+    font-size: .1px;
+    line-height: 19px;
+    letter-spacing: 0.01em;
+    color: #FFFFFF;
+    transition: .5s;
+    opacity: 0;
+
+}
+
+.dgemsLink{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.dgems{
+    opacity: 0;
+    width: .1px;
+    transition: .5s;
+}
+
+.dgems1{
+    opacity: 1;
+    width: 45px;
+    margin: 0 0 20px 0;
+    transition: .5s;
+}
+
+.menuList{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menuList li{
+}
+
+.linkLi{
+    height: 66px;
+    display: flex;
+    align-items: center;
+    padding: 0 24px;
+    overflow: hidden;
+    transition: .2s;
+    border-top: 1px #494949 solid;
+}
+
+.linkText{
+    padding-left: 25px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 23px;
+    color: #FFFFFF;
+    opacity: 0;
+    transition-duration: .2s;
+    white-space: nowrap;
+
+    
+}
+
+svg{
+    width: 18px;
+    height: 22px;
+    overflow: visible;
+    fill: white;
+}
+
+
+/* Menu expandido hover */
+
+.menuContainer:hover{
+    width: 245px;
+    opacity: .9;
+    backdrop-filter: blur(15px);
+}
+
+.menuContainer:hover .menuHeader{
+    justify-content: space-evenly;
+}
+
+.menuContainer:hover .tituloUno{
+    margin-top: 10px;
+    opacity: 1;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.menuContainer:hover .tituloDos{
+    opacity: 1;
+    font-weight: 300;
+    font-size: 15px;
+}
+
+.menuContainer:hover .dgems{
+    opacity: 1;
+    width: 96px;
+    padding-bottom: 20px;
+}
+
+.menuContainer:hover .dgems1{
+    margin: 0;
+    opacity: 0;
+    width: 20px;
+}
+
+.menuContainer:hover .linkText{
+    opacity: 1;
+}
+
+
+
+.linkLi:hover{
+    background-color: #FFFFFF;
+    flex-flow: row-reverse;
+    justify-content: space-between;
+    width: 205px;
+    border-radius: 0 10px 10px 0;
+    -webkit-box-shadow: 7px 0px 24px -4px rgba(0,0,0,0.49);
+    -moz-box-shadow: 7px 0px 24px -4px rgba(0,0,0,0.49);
+    box-shadow: 7px 0px 24px -4px rgba(0,0,0,0.49);
+}
+
+.linkLi:hover svg{
+    fill: #A59B62;
+    height: 29px;
+    width: 24px;
+}
+
+.linkLi:hover .linkText{
+    font-weight: 600;
+    padding: 0;
+    color: #A59B62;
+    font-size: 20px;
+    line-height: 25px;
+}
+
+/* Fondo */
+.fondoUnoContainer{
+    position: absolute;
+    height: 40vh;
+    background-color: #EBF7FF;
+    width: calc(100% - 65px);
+    bottom: 0;
+    right: 0;
+    border-radius: 20px 20px 0 0;
+}
+
+
+
+/* Contenido */
+
+.box{
+    width: calc(100% - 65px);
+    height: 100vh;
+    z-index: 2;
+    position: absolute;
+    right: 0;
+    display: flex;
+    place-items: center;
+}
+
+.box .textInd{
+    font-size: 15vw;
+    text-align: center;
+    color: #a49962;
+    font-family: 'Sora', sans-serif;
+    font-weight: 600;
+}
