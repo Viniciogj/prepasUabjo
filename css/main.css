@@ -12,7 +12,8 @@ a{
 .totalContainer{
     position: relative;
     display: flex;
-    background-color: #5A697B;
+    /* background-color: #5A697B; */
+    background-color: pink;
     justify-content: space-between;
     overflow: hidden;
 }
@@ -99,8 +100,7 @@ a{
     padding: 0;
 }
 
-.menuList li{
-}
+
 
 .linkLi{
     height: 66px;
